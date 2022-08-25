@@ -1,0 +1,8 @@
+<div class="container pt-4 col-4">
+  <h1>Edit List</h1>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %> <br>
+    <%= f.submit class: 'btn btn-success text-white' %>
+  <% end %>
+
+  <br>
