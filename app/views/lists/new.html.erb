@@ -3,6 +3,7 @@
   <h1>Create List</h1>
   <%= simple_form_for @list do |f| %>
     <%= f.input :name %> <br>
+     <%= f.input :photo, as: :file %>
     <%= f.submit class: 'btn btn-success text-white' %>
   <% end %>
 
