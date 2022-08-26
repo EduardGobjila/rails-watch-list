@@ -5,10 +5,10 @@
 
 <div class="container pt-5 col-4">
   <div class="card">
-    <% if @list.photo.attached? %>
+    <% if @list.photo.key %>
       <%= cl_image_tag @list.photo.key %>
     <% else %>
-      <%= cl_image_tag 'https://res.cloudinary.com/dwoz78u8z/image/upload/v1661513495/kksgxdj5efn7leuvtcs8.jpg', height: 300, width: 400, crop: :fill %>
+      <%= image_tag 'https://res.cloudinary.com/dwoz78u8z/image/upload/v1661513495/kksgxdj5efn7leuvtcs8.jpg', height: 300, width: 400, crop: :fill %>
     <% end %>
   </div>
 </div>
