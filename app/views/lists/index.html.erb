@@ -7,6 +7,6 @@
 
 <div class="container pt-5 col-4">
   <% @lists.each do |list| %>
-   <%= link_to list.name, list_path(list) %> <br>
+   <%= link_to list.name, list_path(list), class: 'btn btn-danger text-white', style: 'margin: 10px;' %> <br>
   <% end %>
 </div>
